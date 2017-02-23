@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en" prefix="og: http://ogp.me/ns# fb: https://www.facebook.com/2008/fbml">
 <head>
-    <title>About - The Pycnic</title>
+    <title>Introducing the Meta category - The Pycnic</title>
     <!-- Using the latest rendering mode for IE -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta charset="utf-8">
@@ -165,16 +165,21 @@ init_mathjax = function() {
 init_mathjax();
 </script>
 
+<link rel="canonical" href="http://blog.pycnic.org/introducing-the-meta-category.html">
 
-    <meta name="author" content="pycnic" />
-    <meta name="keywords" content="About" />
+        <meta name="author" content="Andreas Sorge" />
+        <meta name="keywords" content="about" />
+        <meta name="description" content="The new Meta category will be a home to all blog posts concerned with running this blog." />
 
-    <!-- Open Graph tags -->
         <meta property="og:site_name" content="The Pycnic" />
-        <meta property="og:type" content="website"/>
-        <meta property="og:title" content="The Pycnic"/>
-        <meta property="og:url" content="http://blog.pycnic.org"/>
-        <meta property="og:description" content="The Pycnic"/>
+        <meta property="og:type" content="article"/>
+        <meta property="og:title" content="Introducing the Meta category"/>
+        <meta property="og:url" content="http://blog.pycnic.org/introducing-the-meta-category.html"/>
+        <meta property="og:description" content="The new Meta category will be a home to all blog posts concerned with running this blog."/>
+        <meta property="article:published_time" content="2017-02-23" />
+            <meta property="article:section" content="Meta" />
+            <meta property="article:tag" content="about" />
+            <meta property="article:author" content="Andreas Sorge" />
 
 
     <!-- Bootstrap -->
@@ -189,8 +194,8 @@ init_mathjax();
 
 
 
-        <link href="http://blog.pycnic.org/feeds/about.atom.xml" type="application/atom+xml" rel="alternate"
-              title="The Pycnic About ATOM Feed"/>
+        <link href="http://blog.pycnic.org/feeds/meta.atom.xml" type="application/atom+xml" rel="alternate"
+              title="The Pycnic Meta ATOM Feed"/>
 
 </head>
 <body>
@@ -209,10 +214,10 @@ The Pycnic            </a>
         </div>
         <div class="collapse navbar-collapse navbar-ex1-collapse">
             <ul class="nav navbar-nav">
-                        <li class="active">
+                        <li >
                             <a href="http://blog.pycnic.org/category/about.html">About</a>
                         </li>
-                        <li >
+                        <li class="active">
                             <a href="http://blog.pycnic.org/category/meta.html">Meta</a>
                         </li>
             </ul>
@@ -227,13 +232,24 @@ The Pycnic            </a>
 <div class="container">
     <div class="row">
         <div class="col-sm-9">
-            <article>
-                <h2><a href="http://blog.pycnic.org/hello-world.html">Hello World!</a></h2>
-                    <div class="well well-sm">
+    <section id="content">
+        <article>
+            <header class="page-header">
+                <h1>
+                    <a href="http://blog.pycnic.org/introducing-the-meta-category.html"
+                       rel="bookmark"
+                       title="Permalink to Introducing the Meta category">
+                        Introducing the Meta category
+                    </a>
+                </h1>
+            </header>
+            <div class="entry-content">
+                <div class="panel">
+                    <div class="panel-body">
 <footer class="post-info">
     <span class="label label-default">Date</span>
     <span class="published">
-        <i class="fa fa-calendar"></i><time datetime="2017-02-10T14:00:00+01:00"> Fr 10 Februar 2017</time>
+        <i class="fa fa-calendar"></i><time datetime="2017-02-23T00:00:00+01:00"> Do 23 Februar 2017</time>
     </span>
 
 
@@ -241,22 +257,26 @@ The Pycnic            </a>
             <a href="http://blog.pycnic.org/author/andreas-sorge.html"><i class="fa fa-user"></i> Andreas Sorge</a>
 
         <span class="label label-default">Category</span>
-        <a href="http://blog.pycnic.org/category/about.html">About</a>
+        <a href="http://blog.pycnic.org/category/meta.html">Meta</a>
 
 
 <span class="label label-default">Tags</span>
-	<a href="http://blog.pycnic.org/tag/pycnic.html">pycnic</a>
-        /
 	<a href="http://blog.pycnic.org/tag/about.html">about</a>
     
 </footer><!-- /.post-info -->                    </div>
-                <div class="summary"><p>Welcome to "The Pycnic", the blog of the pycnic team.</p>
-<div class="highlight"><pre><span></span><span class="k">print</span><span class="p">(</span><span class="s2">&quot;Hello World!&quot;</span><span class="p">)</span>
-</pre></div>
-                    <a class="btn btn-default btn-xs" href="http://blog.pycnic.org/hello-world.html">more ...</a>
                 </div>
-            </article>
-            <hr/>
+                <p>The new <a href="/category/meta.html"><strong>Meta</strong> category</a> will be a home to all
+blog posts concerned with running this blog.</p>
+            </div>
+            <!-- /.entry-content -->
+<section class="well" id="related-posts">
+    <h4>Related Posts:</h4>
+    <ul>
+        <li><a href="http://blog.pycnic.org/hello-world.html">Hello World!</a></li>
+    </ul>
+</section>
+        </article>
+    </section>
 
         </div>
         <div class="col-sm-3" id="sidebar">
@@ -267,6 +287,11 @@ The Pycnic            </a>
 
             <li class="list-group-item"><h4><i class="fa fa-home fa-lg"></i><span class="icon-label">Recent Posts</span></h4>
                 <ul class="list-group" id="recentposts">
+                    <li class="list-group-item">
+                        <a href="http://blog.pycnic.org/introducing-the-meta-category.html">
+                            Introducing the Meta category
+                        </a>
+                    </li>
                     <li class="list-group-item">
                         <a href="http://blog.pycnic.org/hello-world.html">
                             Hello World!
