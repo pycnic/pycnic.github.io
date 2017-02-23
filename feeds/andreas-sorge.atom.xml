@@ -1,5 +1,94 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>The Pycnic - Andreas Sorge</title><link href="http://blog.pycnic.org/" rel="alternate"></link><link href="http://blog.pycnic.org/feeds/andreas-sorge.atom.xml" rel="self"></link><id>http://blog.pycnic.org/</id><updated>2017-02-23T18:00:00+01:00</updated><entry><title>A recipe for reproducible research</title><link href="http://blog.pycnic.org/a-recipe-for-reproducible-research.html" rel="alternate"></link><published>2017-02-23T18:00:00+01:00</published><updated>2017-02-23T18:00:00+01:00</updated><author><name>Andreas Sorge</name></author><id>tag:blog.pycnic.org,2017-02-23:/a-recipe-for-reproducible-research.html</id><summary type="html"></summary><content type="html"></content><category term="reproducible research"></category></entry><entry><title>Introducing the "Doing Science" category</title><link href="http://blog.pycnic.org/introducing-the-doing-science-category.html" rel="alternate"></link><published>2017-02-23T15:00:00+01:00</published><updated>2017-02-23T15:00:00+01:00</updated><author><name>Andreas Sorge</name></author><id>tag:blog.pycnic.org,2017-02-23:/introducing-the-doing-science-category.html</id><summary type="html">&lt;p&gt;The new &lt;a href="/category/doing-science.html"&gt;&lt;strong&gt;Doing Science&lt;/strong&gt; category&lt;/a&gt; will hosts
+<feed xmlns="http://www.w3.org/2005/Atom"><title>The Pycnic - Andreas Sorge</title><link href="http://blog.pycnic.org/" rel="alternate"></link><link href="http://blog.pycnic.org/feeds/andreas-sorge.atom.xml" rel="self"></link><id>http://blog.pycnic.org/</id><updated>2017-02-23T18:00:00+01:00</updated><entry><title>Ingredients for a recipe for reproducible research</title><link href="http://blog.pycnic.org/ingredients-for-a-recipe-for-reproducible-research.html" rel="alternate"></link><published>2017-02-23T18:00:00+01:00</published><updated>2017-02-23T18:00:00+01:00</updated><author><name>Andreas Sorge</name></author><id>tag:blog.pycnic.org,2017-02-23:/ingredients-for-a-recipe-for-reproducible-research.html</id><summary type="html">&lt;p&gt;Doing computational research in a reproducible manner requires some effort in
+the first place.
+The good news is, project organisation and collaboration come almost for free.&lt;/p&gt;
+&lt;p&gt;This series provides some guidance in setting up an individual or collaborative
+computational research project that leads to a specific scientific output.
+Project and …&lt;/p&gt;</summary><content type="html">&lt;p&gt;Doing computational research in a reproducible manner requires some effort in
+the first place.
+The good news is, project organisation and collaboration come almost for free.&lt;/p&gt;
+&lt;p&gt;This series provides some guidance in setting up an individual or collaborative
+computational research project that leads to a specific scientific output.
+Project and output does not only refer to a paper, but also to other forms of
+scientific output, such as presentations, a software package, or a dataset.&lt;/p&gt;
+&lt;p&gt;As in cooking, there is a plethora of possible ingredients, and a lot of
+feasible choices to combine them in setting up and running a computational
+research project.
+This recipe makes a lot of default choices and hence, provides a working
+solution.
+As in cooking, the chef is free to make her own choices to refine the recipe
+or adapt it to personal taste.&lt;/p&gt;
+&lt;p&gt;Specifically, the recipe employs the following ingredients:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Operating system:
+  &lt;a href="https://en.wikipedia.org/wiki/Ubuntu_(operating_system)"&gt;&lt;i class="fa fa-linux" aria-hidden="true"&gt;&lt;/i&gt; Ubuntu&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Version control system:
+  &lt;a href="https://en.wikipedia.org/wiki/Git"&gt;&lt;i class="fa fa-git" aria-hidden="true"&gt;&lt;/i&gt; Git&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Web-based version control repository:
+  &lt;a href="https://about.gitlab.com"&gt;&lt;i class="fa fa-gitlab" aria-hidden="true"&gt;&lt;/i&gt; GitLab&lt;/a&gt;,
+  &lt;a href="https://github.com/"&gt;&lt;i class="fa fa-github" aria-hidden="true"&gt;&lt;/i&gt; GitHub&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Scripting language:
+  &lt;a href="https://www.python.org/"&gt;&lt;i class="fa fa-python" aria-hidden="true"&gt;&lt;/i&gt; Python&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Unit testing framework:
+  &lt;a href="http://pytest.org"&gt;pytest&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Property-based testing, including stateful testing:
+  &lt;a href="http://hypothesis.works/"&gt;Hypothesis for Python&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Automate testing:
+  &lt;a href="https://tox.readthedocs.io"&gt;tox&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Versioning scheme:
+  &lt;a href="http://semver.org/"&gt;Semantic Versioning&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Text source markup language:
+  &lt;a href="https://en.wikipedia.org/wiki/Markdown"&gt;Markdown&lt;/a&gt;, &lt;a href="https://en.wikipedia.org/wiki/ReStructuredText"&gt;reStructuredText&lt;/a&gt;, &lt;a href="https://www.latex-project.org/"&gt;LaTeX&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Text document converter:
+  &lt;a href="https://en.wikipedia.org/wiki/Pandoc"&gt;Pandoc&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Virtualization software:
+  &lt;a href="https://en.wikipedia.org/wiki/Docker_%28software%29"&gt;Docker&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Reference management software:
+  &lt;a href="https://www.zotero.org/"&gt;Zotero&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Task management and automation:
+  &lt;a href="http://pydoit.org/"&gt;doit&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Package and environment management:
+  &lt;a href="https://conda.io"&gt;Conda&lt;/a&gt;, &lt;a href="https://pip.pypa.io"&gt;pip&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;License:
+  &lt;a href="https://creativecommons.org/licenses/by/4.0/"&gt;&lt;i class="fa fa-creative-commons" aria-hidden="true"&gt;&lt;/i&gt;
+  Creative Commons Attribution License&lt;/a&gt;,
+  &lt;a href="https://en.wikipedia.org/wiki/ISC_license"&gt;ISC License&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Interactive data science and scientific computing:
+  &lt;a href="http://jupyter.org"&gt;Project Jupyter&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Reproducible reporting and literate programming:
+  &lt;a href="http://www.ctan.org/pkg/pythontex"&gt;PythonTeX&lt;/a&gt;,
+  &lt;a href="http://jupyter.org"&gt;Project Jupyter&lt;/a&gt;,
+  &lt;a href="https://pystitch.github.io/"&gt;stitch&lt;/a&gt;,
+  &lt;a href="http://mpastell.com/pweave/"&gt;Pweave&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Plotting:
+  &lt;a href="http://holoviews.org"&gt;HoloViews&lt;/a&gt;, &lt;a href="http://bokeh.pydata.org"&gt;Bokeh&lt;/a&gt;, &lt;a href="http://matplotlib.org/"&gt;Matplotlib&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Technical documentation:
+  &lt;a href="http://www.sphinx-doc.org/"&gt;Sphinx&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Hosting documentation:
+  &lt;a href="https://readthedocs.org/"&gt;Read The Docs&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Continuous Integration (CI):
+  &lt;a href="https://about.gitlab.com/gitlab-ci/"&gt;GitLab CI&lt;/a&gt;, &lt;a href="https://travis-ci.org/"&gt;Travis CI&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;High-Performance Computing (HPC):
+  Grid Engine (SGE),
+  &lt;a href="http://dask.pydata.org"&gt;Dask&lt;/a&gt;,
+  Running dask on IPython parallel,
+  Configuring IPython parallel on Grid Engine cluster&lt;/li&gt;
+&lt;li&gt;Interactive High-Performance Computing (IHPC):
+  Running Jupyter on a cluster node,
+  &lt;a href="https://ipyparallel.readthedocs.io/"&gt;IPython Parallel&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Research data repository (with DOI):
+  &lt;a href="https://zenodo.org/"&gt;Zenodo&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Collaborative writing and preprint publishing (with DOI):
+  &lt;a href="https://www.authorea.com/"&gt;Authorea&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Persistent researcher identifier:
+  &lt;a href="https://orcid.org/"&gt;ORCID&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;At the heart of the recipe is the notion of an &lt;em&gt;artifact&lt;/em&gt;, as inspired by
+&lt;a href="http://www.bekolay.org/scipy2013-workflow/#/"&gt;Bekolay (2013)&lt;/a&gt;.
+Note that not every ingredient applies to every type of artifact.
+The following posts in this series will shed light on each ingredient as well
+as on several types of artifacts, such as publication-quality research papers,
+research reports, software packages and presentations.&lt;/p&gt;</content><category term="reproducible research"></category></entry><entry><title>Introducing the "Doing Science" category</title><link href="http://blog.pycnic.org/introducing-the-doing-science-category.html" rel="alternate"></link><published>2017-02-23T15:00:00+01:00</published><updated>2017-02-23T15:00:00+01:00</updated><author><name>Andreas Sorge</name></author><id>tag:blog.pycnic.org,2017-02-23:/introducing-the-doing-science-category.html</id><summary type="html">&lt;p&gt;The new &lt;a href="/category/doing-science.html"&gt;&lt;strong&gt;Doing Science&lt;/strong&gt; category&lt;/a&gt; will hosts
 posts aimed at the individual scientist and group.
 The posts will be dealing with how to organise individual and collaborative
 research and other scientific work on the work level.&lt;/p&gt;</summary><content type="html">&lt;p&gt;The new &lt;a href="/category/doing-science.html"&gt;&lt;strong&gt;Doing Science&lt;/strong&gt; category&lt;/a&gt; will hosts
