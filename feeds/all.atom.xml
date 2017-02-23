@@ -1,5 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>The Pycnic</title><link href="http://blog.pycnic.org/" rel="alternate"></link><link href="http://blog.pycnic.org/feeds/all.atom.xml" rel="self"></link><id>http://blog.pycnic.org/</id><updated>2017-02-23T00:00:00+01:00</updated><entry><title>Introducing the Meta category</title><link href="http://blog.pycnic.org/introducing-the-meta-category.html" rel="alternate"></link><published>2017-02-23T00:00:00+01:00</published><updated>2017-02-23T00:00:00+01:00</updated><author><name>Andreas Sorge</name></author><id>tag:blog.pycnic.org,2017-02-23:/introducing-the-meta-category.html</id><summary type="html">&lt;p&gt;The new &lt;a href="/category/meta.html"&gt;&lt;strong&gt;Meta&lt;/strong&gt; category&lt;/a&gt; will be a home to all
+<feed xmlns="http://www.w3.org/2005/Atom"><title>The Pycnic</title><link href="http://blog.pycnic.org/" rel="alternate"></link><link href="http://blog.pycnic.org/feeds/all.atom.xml" rel="self"></link><id>http://blog.pycnic.org/</id><updated>2017-02-23T14:00:00+01:00</updated><entry><title>Using categories and tags</title><link href="http://blog.pycnic.org/using-categories-and-tags.html" rel="alternate"></link><published>2017-02-23T14:00:00+01:00</published><updated>2017-02-23T14:00:00+01:00</updated><author><name>Andreas Sorge</name></author><id>tag:blog.pycnic.org,2017-02-23:/using-categories-and-tags.html</id><summary type="html">&lt;p&gt;Digital assets abound and come in diverse flavors.
+For example, a digital asset can be a blog post, a scientific article, a
+software package.
+Specific repositories store digital assets of the same type.
+A blog stores blog posts, a scientific journal stores scientific articles, a
+software package repository stores you …&lt;/p&gt;</summary><content type="html">&lt;p&gt;Digital assets abound and come in diverse flavors.
+For example, a digital asset can be a blog post, a scientific article, a
+software package.
+Specific repositories store digital assets of the same type.
+A blog stores blog posts, a scientific journal stores scientific articles, a
+software package repository stores you name it.
+With storing a great number of digital assets comes the task of describing the
+content of each asset and the relation of assets in a systematic way.
+This meta-information facilitates retrieval of the desired asset as well as
+exploration of the repository.&lt;/p&gt;
+&lt;p&gt;Many systems in general and blogging systems in particular provide &lt;em&gt;categories&lt;/em&gt;
+and &lt;a href="https://en.wikipedia.org/wiki/Tag_(metadata)#Knowledge_tags"&gt;&lt;em&gt;tags&lt;/em&gt;&lt;/a&gt; to
+classify their contents.
+Categories serve as thematically broad entry points and navigation to the
+reader.
+A category page is a distinct sub-blog, like a
+newspaper section.
+Tags on the other hand classify the ingredients of each piece across categories,
+each post should have as many tags as relevant to its content.&lt;/p&gt;
+&lt;p&gt;To summarize, &lt;em&gt;categories bind the content to a specific outlet (output), tags
+classify the content itself (or the input)&lt;/em&gt;.&lt;/p&gt;</content><category term="blogging"></category><category term="digital asset management"></category></entry><entry><title>Introducing the Meta category</title><link href="http://blog.pycnic.org/introducing-the-meta-category.html" rel="alternate"></link><published>2017-02-23T00:00:00+01:00</published><updated>2017-02-23T00:00:00+01:00</updated><author><name>Andreas Sorge</name></author><id>tag:blog.pycnic.org,2017-02-23:/introducing-the-meta-category.html</id><summary type="html">&lt;p&gt;The new &lt;a href="/category/meta.html"&gt;&lt;strong&gt;Meta&lt;/strong&gt; category&lt;/a&gt; will be a home to all
 blog posts concerned with running this blog.&lt;/p&gt;</summary><content type="html">&lt;p&gt;The new &lt;a href="/category/meta.html"&gt;&lt;strong&gt;Meta&lt;/strong&gt; category&lt;/a&gt; will be a home to all
 blog posts concerned with running this blog.&lt;/p&gt;</content><category term="about"></category></entry><entry><title>Hello World!</title><link href="http://blog.pycnic.org/hello-world.html" rel="alternate"></link><published>2017-02-10T14:00:00+01:00</published><updated>2017-02-10T14:00:00+01:00</updated><author><name>Andreas Sorge</name></author><id>tag:blog.pycnic.org,2017-02-10:/hello-world.html</id><summary type="html">&lt;p&gt;Welcome to "The Pycnic", the blog of the pycnic team.&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="k"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;Hello World!&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;

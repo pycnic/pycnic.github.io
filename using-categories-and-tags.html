@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en" prefix="og: http://ogp.me/ns# fb: https://www.facebook.com/2008/fbml">
 <head>
-    <title>Tags - The Pycnic</title>
+    <title>Using categories and tags - The Pycnic</title>
     <!-- Using the latest rendering mode for IE -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta charset="utf-8">
@@ -165,15 +165,22 @@ init_mathjax = function() {
 init_mathjax();
 </script>
 
+<link rel="canonical" href="http://blog.pycnic.org/using-categories-and-tags.html">
 
-        <meta name="author" content="pycnic" />
+        <meta name="author" content="Andreas Sorge" />
+        <meta name="keywords" content="blogging,digital asset management" />
+        <meta name="description" content="Digital assets abound and come in diverse flavors. For example, a digital asset can be a blog post, a scientific article, a software package. Specific repositories store digital assets of the same type. A blog stores blog posts, a scientific journal stores scientific articles, a software package repository stores you …" />
 
-    <!-- Open Graph tags -->
         <meta property="og:site_name" content="The Pycnic" />
-        <meta property="og:type" content="website"/>
-        <meta property="og:title" content="The Pycnic"/>
-        <meta property="og:url" content="http://blog.pycnic.org"/>
-        <meta property="og:description" content="The Pycnic"/>
+        <meta property="og:type" content="article"/>
+        <meta property="og:title" content="Using categories and tags"/>
+        <meta property="og:url" content="http://blog.pycnic.org/using-categories-and-tags.html"/>
+        <meta property="og:description" content="Digital assets abound and come in diverse flavors. For example, a digital asset can be a blog post, a scientific article, a software package. Specific repositories store digital assets of the same type. A blog stores blog posts, a scientific journal stores scientific articles, a software package repository stores you …"/>
+        <meta property="article:published_time" content="2017-02-23" />
+            <meta property="article:section" content="Meta" />
+            <meta property="article:tag" content="blogging" />
+            <meta property="article:tag" content="digital asset management" />
+            <meta property="article:author" content="Andreas Sorge" />
 
 
     <!-- Bootstrap -->
@@ -188,6 +195,8 @@ init_mathjax();
 
 
 
+        <link href="http://blog.pycnic.org/feeds/meta.atom.xml" type="application/atom+xml" rel="alternate"
+              title="The Pycnic Meta ATOM Feed"/>
 
 </head>
 <body>
@@ -209,7 +218,7 @@ The Pycnic            </a>
                         <li >
                             <a href="http://blog.pycnic.org/category/about.html">About</a>
                         </li>
-                        <li >
+                        <li class="active">
                             <a href="http://blog.pycnic.org/category/meta.html">Meta</a>
                         </li>
             </ul>
@@ -224,60 +233,67 @@ The Pycnic            </a>
 <div class="container">
     <div class="row">
         <div class="col-sm-9">
-    <section id="tags">
-        <h1>Tags for The Pycnic</h1>
-        <div class="panel-group" id="accordion">            <div class="panel panel-default">
-                <div class="panel-heading">
-                    <h4 class="panel-title">
-                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse-about">about <span class="badge pull-right">2</span></a>
-                    </h4>
-                </div>
-                <div id="collapse-about" class="panel-collapse collapse">
+    <section id="content">
+        <article>
+            <header class="page-header">
+                <h1>
+                    <a href="http://blog.pycnic.org/using-categories-and-tags.html"
+                       rel="bookmark"
+                       title="Permalink to Using categories and tags">
+                        Using categories and tags
+                    </a>
+                </h1>
+            </header>
+            <div class="entry-content">
+                <div class="panel">
                     <div class="panel-body">
-                        <p><span class="categories-timestamp"><time datetime="2017-02-23T00:00:00+01:00">Do 23 Februar 2017</time></span> <a href="http://blog.pycnic.org/introducing-the-meta-category.html">Introducing the Meta category</a></p>
-                        <p><span class="categories-timestamp"><time datetime="2017-02-10T14:00:00+01:00">Fr 10 Februar 2017</time></span> <a href="http://blog.pycnic.org/hello-world.html">Hello World!</a></p>
-                    </div>
-                </div>
-            </div>
-            <div class="panel panel-default">
-                <div class="panel-heading">
-                    <h4 class="panel-title">
-                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse-blogging">blogging <span class="badge pull-right">1</span></a>
-                    </h4>
-                </div>
-                <div id="collapse-blogging" class="panel-collapse collapse">
-                    <div class="panel-body">
-                        <p><span class="categories-timestamp"><time datetime="2017-02-23T14:00:00+01:00">Do 23 Februar 2017</time></span> <a href="http://blog.pycnic.org/using-categories-and-tags.html">Using categories and tags</a></p>
-                    </div>
-                </div>
-            </div>
-            <div class="panel panel-default">
-                <div class="panel-heading">
-                    <h4 class="panel-title">
-                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse-digital-asset-management">digital asset management <span class="badge pull-right">1</span></a>
-                    </h4>
-                </div>
-                <div id="collapse-digital-asset-management" class="panel-collapse collapse">
-                    <div class="panel-body">
-                        <p><span class="categories-timestamp"><time datetime="2017-02-23T14:00:00+01:00">Do 23 Februar 2017</time></span> <a href="http://blog.pycnic.org/using-categories-and-tags.html">Using categories and tags</a></p>
-                    </div>
-                </div>
-            </div>
-            <div class="panel panel-default">
-                <div class="panel-heading">
-                    <h4 class="panel-title">
-                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse-pycnic">pycnic <span class="badge pull-right">1</span></a>
-                    </h4>
-                </div>
-                <div id="collapse-pycnic" class="panel-collapse collapse">
-                    <div class="panel-body">
-                        <p><span class="categories-timestamp"><time datetime="2017-02-10T14:00:00+01:00">Fr 10 Februar 2017</time></span> <a href="http://blog.pycnic.org/hello-world.html">Hello World!</a></p>
-                    </div>
-                </div>
-            </div>
-        </div>
+<footer class="post-info">
+    <span class="label label-default">Date</span>
+    <span class="published">
+        <i class="fa fa-calendar"></i><time datetime="2017-02-23T14:00:00+01:00"> Do 23 Februar 2017</time>
+    </span>
 
+
+            <span class="label label-default">By</span>
+            <a href="http://blog.pycnic.org/author/andreas-sorge.html"><i class="fa fa-user"></i> Andreas Sorge</a>
+
+        <span class="label label-default">Category</span>
+        <a href="http://blog.pycnic.org/category/meta.html">Meta</a>
+
+
+<span class="label label-default">Tags</span>
+	<a href="http://blog.pycnic.org/tag/blogging.html">blogging</a>
+        /
+	<a href="http://blog.pycnic.org/tag/digital-asset-management.html">digital asset management</a>
+    
+</footer><!-- /.post-info -->                    </div>
+                </div>
+                <p>Digital assets abound and come in diverse flavors.
+For example, a digital asset can be a blog post, a scientific article, a
+software package.
+Specific repositories store digital assets of the same type.
+A blog stores blog posts, a scientific journal stores scientific articles, a
+software package repository stores you name it.
+With storing a great number of digital assets comes the task of describing the
+content of each asset and the relation of assets in a systematic way.
+This meta-information facilitates retrieval of the desired asset as well as
+exploration of the repository.</p>
+<p>Many systems in general and blogging systems in particular provide <em>categories</em>
+and <a href="https://en.wikipedia.org/wiki/Tag_(metadata)#Knowledge_tags"><em>tags</em></a> to
+classify their contents.
+Categories serve as thematically broad entry points and navigation to the
+reader.
+A category page is a distinct sub-blog, like a
+newspaper section.
+Tags on the other hand classify the ingredients of each piece across categories,
+each post should have as many tags as relevant to its content.</p>
+<p>To summarize, <em>categories bind the content to a specific outlet (output), tags
+classify the content itself (or the input)</em>.</p>
+            </div>
+            <!-- /.entry-content -->
+        </article>
     </section>
+
         </div>
         <div class="col-sm-3" id="sidebar">
             <aside>
