@@ -288,11 +288,20 @@ or adapt it to personal taste.</p>
 <ul>
 <li>Operating system:
   <a href="https://en.wikipedia.org/wiki/Ubuntu_(operating_system)"><i class="fa fa-linux" aria-hidden="true"></i> Ubuntu</a></li>
+<li>Command processor:
+  <a href="https://en.wikipedia.org/wiki/Bash_%28Unix_shell%29"><i class="fa fa-terminal" aria-hidden="true"></i>
+  Bash</a></li>
+<li>System configuration:
+  dotphiles, https://dotfiles.github.io/</li>
+<li>Text editor:
+  <a href="https://atom.io/">Atom</a></li>
 <li>Version control system:
   <a href="https://en.wikipedia.org/wiki/Git"><i class="fa fa-git" aria-hidden="true"></i> Git</a></li>
 <li>Web-based version control repository:
   <a href="https://about.gitlab.com"><i class="fa fa-gitlab" aria-hidden="true"></i> GitLab</a>,
   <a href="https://github.com/"><i class="fa fa-github" aria-hidden="true"></i> GitHub</a></li>
+<li>Commit message:
+  https://docs.scipy.org/doc/numpy/dev/gitwash/development_workflow.html#writing-the-commit-message</li>
 <li>Scripting language:
   <a href="https://www.python.org/"><i class="fa fa-python" aria-hidden="true"></i> Python</a></li>
 <li>Unit testing framework:
@@ -306,13 +315,17 @@ or adapt it to personal taste.</p>
 <li>Text source markup language:
   <a href="https://en.wikipedia.org/wiki/Markdown">Markdown</a>, <a href="https://en.wikipedia.org/wiki/ReStructuredText">reStructuredText</a>, <a href="https://www.latex-project.org/">LaTeX</a></li>
 <li>Text document converter:
-  <a href="https://en.wikipedia.org/wiki/Pandoc">Pandoc</a></li>
+  <a href="https://en.wikipedia.org/wiki/Pandoc">Pandoc</a>,
+  <a href="http://www.sphinx-doc.org/">Sphinx</a>,
+  <a href="https://en.wikipedia.org/wiki/TeX_Live">TeX Live</a></li>
 <li>Virtualization software:
   <a href="https://en.wikipedia.org/wiki/Docker_%28software%29">Docker</a></li>
 <li>Reference management software:
   <a href="https://www.zotero.org/">Zotero</a></li>
 <li>Task management and automation:
-  <a href="http://pydoit.org/">doit</a></li>
+  <a href="http://pydoit.org/">doit</a>,
+  <a href="http://ctan.org/pkg/latexmk">latexmk</a>,
+  <a href="https://en.wikipedia.org/wiki/Make_(software)">Make</a></li>
 <li>Package and environment management:
   <a href="https://conda.io">Conda</a>, <a href="https://pip.pypa.io">pip</a></li>
 <li>License:
@@ -328,17 +341,23 @@ or adapt it to personal taste.</p>
   <a href="http://mpastell.com/pweave/">Pweave</a></li>
 <li>Plotting:
   <a href="http://holoviews.org">HoloViews</a>, <a href="http://bokeh.pydata.org">Bokeh</a>, <a href="http://matplotlib.org/">Matplotlib</a></li>
-<li>Technical documentation:
-  <a href="http://www.sphinx-doc.org/">Sphinx</a></li>
 <li>Hosting documentation:
   <a href="https://readthedocs.org/">Read The Docs</a></li>
 <li>Continuous Integration (CI):
   <a href="https://about.gitlab.com/gitlab-ci/">GitLab CI</a>, <a href="https://travis-ci.org/">Travis CI</a></li>
+<li>Random number generation</li>
+<li>Profiling</li>
+<li>Style Guide:
+  <a href="https://www.python.org/dev/peps/pep-0008/">PEP 8</a>,
+  <a href="https://github.com/numpy/numpy/blob/master/doc/HOWTO_DOCUMENT.rst.txt">numpydoc</a></li>
 <li>High-Performance Computing (HPC):
   Grid Engine (SGE),
   <a href="http://dask.pydata.org">Dask</a>,
   Running dask on IPython parallel,
-  Configuring IPython parallel on Grid Engine cluster</li>
+  Configuring IPython parallel on Grid Engine cluster,
+  SSH,
+  tmux,
+  Random Number Generation in parallel computing</li>
 <li>Interactive High-Performance Computing (IHPC):
   Running Jupyter on a cluster node,
   <a href="https://ipyparallel.readthedocs.io/">IPython Parallel</a></li>
@@ -348,6 +367,45 @@ or adapt it to personal taste.</p>
   <a href="https://www.authorea.com/">Authorea</a></li>
 <li>Persistent researcher identifier:
   <a href="https://orcid.org/">ORCID</a></li>
+<li>Software repository:
+  <a href="https://anaconda.org">Anaconda Cloud</a>,
+  <a href="https://pypi.python.org/pypi">Python Package Index</a></li>
+</ul>
+<p>Concepts:</p>
+<ul>
+<li>Artifact</li>
+<li>Profiling</li>
+<li>Random number generation</li>
+<li>Parallel Computing</li>
+<li>Task scheduling</li>
+<li>Task automation</li>
+<li>"Full" reproducibility</li>
+<li>Researcher identifier</li>
+<li>Research output repository</li>
+<li>Digital object identifier (DOI)</li>
+<li>Continuous integration (CI)</li>
+<li>Reproducible reporting and literate programming</li>
+<li>Unit testing</li>
+<li>Property-based testing</li>
+<li>Stateful testing</li>
+<li>Pinning dependencies</li>
+<li>Version control</li>
+<li>Workflow</li>
+<li>Release</li>
+<li>Semantic versioning</li>
+<li>Style convention</li>
+<li>Pull/Merge request</li>
+<li>Environment</li>
+<li>Issue</li>
+<li>Interactive computing</li>
+<li>Refactoring code into a library</li>
+<li>Reference management</li>
+<li>Long computations</li>
+<li>Build pipeline</li>
+<li>Storing large datasets</li>
+<li>Processing large datasets (out-of-core computation)</li>
+<li>Licensing</li>
+<li>Readme file</li>
 </ul>
 <p>At the heart of the recipe is the notion of an <em>artifact</em>, as inspired by
 <a href="http://www.bekolay.org/scipy2013-workflow/#/">Bekolay (2013)</a>.
@@ -373,6 +431,7 @@ research reports, software packages and presentations.</p>
               <ul class="list-group" id="social">
                 <li class="list-group-item"><a href="feeds/all.atom.xml"><i class="fa fa-rss-square fa-lg"></i> atom feed</a></li>
                 <li class="list-group-item"><a href="http://github.com/pycnic"><i class="fa fa-github-square fa-lg"></i> github</a></li>
+                <li class="list-group-item"><a href="https://hub.docker.com/u/pycnic/"><i class="fa fa-docker-square fa-lg"></i> docker</a></li>
               </ul>
             </li>
 
@@ -415,8 +474,8 @@ research reports, software packages and presentations.</p>
                         </a>
                     </li>
                     <li class="list-group-item tag-4">
-                        <a href="http://blog.pycnic.org/tag/reproducible-research.html">
-                            reproducible research
+                        <a href="http://blog.pycnic.org/tag/digital-asset-management.html">
+                            digital asset management
                         </a>
                     </li>
                     <li class="list-group-item tag-4">
@@ -425,8 +484,8 @@ research reports, software packages and presentations.</p>
                         </a>
                     </li>
                     <li class="list-group-item tag-4">
-                        <a href="http://blog.pycnic.org/tag/digital-asset-management.html">
-                            digital asset management
+                        <a href="http://blog.pycnic.org/tag/reproducible-research.html">
+                            reproducible research
                         </a>
                     </li>
                     <li class="list-group-item tag-4">

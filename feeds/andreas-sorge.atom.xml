@@ -22,11 +22,20 @@ or adapt it to personal taste.&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Operating system:
   &lt;a href="https://en.wikipedia.org/wiki/Ubuntu_(operating_system)"&gt;&lt;i class="fa fa-linux" aria-hidden="true"&gt;&lt;/i&gt; Ubuntu&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Command processor:
+  &lt;a href="https://en.wikipedia.org/wiki/Bash_%28Unix_shell%29"&gt;&lt;i class="fa fa-terminal" aria-hidden="true"&gt;&lt;/i&gt;
+  Bash&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;System configuration:
+  dotphiles, https://dotfiles.github.io/&lt;/li&gt;
+&lt;li&gt;Text editor:
+  &lt;a href="https://atom.io/"&gt;Atom&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;Version control system:
   &lt;a href="https://en.wikipedia.org/wiki/Git"&gt;&lt;i class="fa fa-git" aria-hidden="true"&gt;&lt;/i&gt; Git&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;Web-based version control repository:
   &lt;a href="https://about.gitlab.com"&gt;&lt;i class="fa fa-gitlab" aria-hidden="true"&gt;&lt;/i&gt; GitLab&lt;/a&gt;,
   &lt;a href="https://github.com/"&gt;&lt;i class="fa fa-github" aria-hidden="true"&gt;&lt;/i&gt; GitHub&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Commit message:
+  https://docs.scipy.org/doc/numpy/dev/gitwash/development_workflow.html#writing-the-commit-message&lt;/li&gt;
 &lt;li&gt;Scripting language:
   &lt;a href="https://www.python.org/"&gt;&lt;i class="fa fa-python" aria-hidden="true"&gt;&lt;/i&gt; Python&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;Unit testing framework:
@@ -40,13 +49,17 @@ or adapt it to personal taste.&lt;/p&gt;
 &lt;li&gt;Text source markup language:
   &lt;a href="https://en.wikipedia.org/wiki/Markdown"&gt;Markdown&lt;/a&gt;, &lt;a href="https://en.wikipedia.org/wiki/ReStructuredText"&gt;reStructuredText&lt;/a&gt;, &lt;a href="https://www.latex-project.org/"&gt;LaTeX&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;Text document converter:
-  &lt;a href="https://en.wikipedia.org/wiki/Pandoc"&gt;Pandoc&lt;/a&gt;&lt;/li&gt;
+  &lt;a href="https://en.wikipedia.org/wiki/Pandoc"&gt;Pandoc&lt;/a&gt;,
+  &lt;a href="http://www.sphinx-doc.org/"&gt;Sphinx&lt;/a&gt;,
+  &lt;a href="https://en.wikipedia.org/wiki/TeX_Live"&gt;TeX Live&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;Virtualization software:
   &lt;a href="https://en.wikipedia.org/wiki/Docker_%28software%29"&gt;Docker&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;Reference management software:
   &lt;a href="https://www.zotero.org/"&gt;Zotero&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;Task management and automation:
-  &lt;a href="http://pydoit.org/"&gt;doit&lt;/a&gt;&lt;/li&gt;
+  &lt;a href="http://pydoit.org/"&gt;doit&lt;/a&gt;,
+  &lt;a href="http://ctan.org/pkg/latexmk"&gt;latexmk&lt;/a&gt;,
+  &lt;a href="https://en.wikipedia.org/wiki/Make_(software)"&gt;Make&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;Package and environment management:
   &lt;a href="https://conda.io"&gt;Conda&lt;/a&gt;, &lt;a href="https://pip.pypa.io"&gt;pip&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;License:
@@ -62,17 +75,23 @@ or adapt it to personal taste.&lt;/p&gt;
   &lt;a href="http://mpastell.com/pweave/"&gt;Pweave&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;Plotting:
   &lt;a href="http://holoviews.org"&gt;HoloViews&lt;/a&gt;, &lt;a href="http://bokeh.pydata.org"&gt;Bokeh&lt;/a&gt;, &lt;a href="http://matplotlib.org/"&gt;Matplotlib&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Technical documentation:
-  &lt;a href="http://www.sphinx-doc.org/"&gt;Sphinx&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;Hosting documentation:
   &lt;a href="https://readthedocs.org/"&gt;Read The Docs&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;Continuous Integration (CI):
   &lt;a href="https://about.gitlab.com/gitlab-ci/"&gt;GitLab CI&lt;/a&gt;, &lt;a href="https://travis-ci.org/"&gt;Travis CI&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Random number generation&lt;/li&gt;
+&lt;li&gt;Profiling&lt;/li&gt;
+&lt;li&gt;Style Guide:
+  &lt;a href="https://www.python.org/dev/peps/pep-0008/"&gt;PEP 8&lt;/a&gt;,
+  &lt;a href="https://github.com/numpy/numpy/blob/master/doc/HOWTO_DOCUMENT.rst.txt"&gt;numpydoc&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;High-Performance Computing (HPC):
   Grid Engine (SGE),
   &lt;a href="http://dask.pydata.org"&gt;Dask&lt;/a&gt;,
   Running dask on IPython parallel,
-  Configuring IPython parallel on Grid Engine cluster&lt;/li&gt;
+  Configuring IPython parallel on Grid Engine cluster,
+  SSH,
+  tmux,
+  Random Number Generation in parallel computing&lt;/li&gt;
 &lt;li&gt;Interactive High-Performance Computing (IHPC):
   Running Jupyter on a cluster node,
   &lt;a href="https://ipyparallel.readthedocs.io/"&gt;IPython Parallel&lt;/a&gt;&lt;/li&gt;
@@ -82,6 +101,45 @@ or adapt it to personal taste.&lt;/p&gt;
   &lt;a href="https://www.authorea.com/"&gt;Authorea&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;Persistent researcher identifier:
   &lt;a href="https://orcid.org/"&gt;ORCID&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Software repository:
+  &lt;a href="https://anaconda.org"&gt;Anaconda Cloud&lt;/a&gt;,
+  &lt;a href="https://pypi.python.org/pypi"&gt;Python Package Index&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Concepts:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Artifact&lt;/li&gt;
+&lt;li&gt;Profiling&lt;/li&gt;
+&lt;li&gt;Random number generation&lt;/li&gt;
+&lt;li&gt;Parallel Computing&lt;/li&gt;
+&lt;li&gt;Task scheduling&lt;/li&gt;
+&lt;li&gt;Task automation&lt;/li&gt;
+&lt;li&gt;"Full" reproducibility&lt;/li&gt;
+&lt;li&gt;Researcher identifier&lt;/li&gt;
+&lt;li&gt;Research output repository&lt;/li&gt;
+&lt;li&gt;Digital object identifier (DOI)&lt;/li&gt;
+&lt;li&gt;Continuous integration (CI)&lt;/li&gt;
+&lt;li&gt;Reproducible reporting and literate programming&lt;/li&gt;
+&lt;li&gt;Unit testing&lt;/li&gt;
+&lt;li&gt;Property-based testing&lt;/li&gt;
+&lt;li&gt;Stateful testing&lt;/li&gt;
+&lt;li&gt;Pinning dependencies&lt;/li&gt;
+&lt;li&gt;Version control&lt;/li&gt;
+&lt;li&gt;Workflow&lt;/li&gt;
+&lt;li&gt;Release&lt;/li&gt;
+&lt;li&gt;Semantic versioning&lt;/li&gt;
+&lt;li&gt;Style convention&lt;/li&gt;
+&lt;li&gt;Pull/Merge request&lt;/li&gt;
+&lt;li&gt;Environment&lt;/li&gt;
+&lt;li&gt;Issue&lt;/li&gt;
+&lt;li&gt;Interactive computing&lt;/li&gt;
+&lt;li&gt;Refactoring code into a library&lt;/li&gt;
+&lt;li&gt;Reference management&lt;/li&gt;
+&lt;li&gt;Long computations&lt;/li&gt;
+&lt;li&gt;Build pipeline&lt;/li&gt;
+&lt;li&gt;Storing large datasets&lt;/li&gt;
+&lt;li&gt;Processing large datasets (out-of-core computation)&lt;/li&gt;
+&lt;li&gt;Licensing&lt;/li&gt;
+&lt;li&gt;Readme file&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;At the heart of the recipe is the notion of an &lt;em&gt;artifact&lt;/em&gt;, as inspired by
 &lt;a href="http://www.bekolay.org/scipy2013-workflow/#/"&gt;Bekolay (2013)&lt;/a&gt;.
