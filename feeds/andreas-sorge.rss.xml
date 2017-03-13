@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0"><channel><title>The Pycnic - Andreas Sorge</title><link>http://blog.pycnic.org/</link><description></description><lastBuildDate>Thu, 23 Feb 2017 18:00:00 +0100</lastBuildDate><item><title>Ingredients for a recipe for reproducible research</title><link>http://blog.pycnic.org/ingredients-for-a-recipe-for-reproducible-research.html</link><description>&lt;p&gt;Doing computational research in a reproducible manner requires some effort in
+<rss version="2.0"><channel><title>The Pycnic - Andreas Sorge</title><link>http://blog.pycnic.org/</link><description></description><lastBuildDate>Mon, 13 Mar 2017 17:00:00 +0100</lastBuildDate><item><title>Deploying Python scripts and packages internally</title><link>http://blog.pycnic.org/deploying-python-scripts-and-packages-internally.html</link><description>&lt;p&gt;In developing Python scripts and packages for computational research, we
+distinguish two different routes to openness.
+The gold standard is you develop your code in the open right away.
+This means creating a public repository on a public version-control repository
+service like GitHub and regularly pushing all commits there.
+The …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Andreas Sorge</dc:creator><pubDate>Mon, 13 Mar 2017 17:00:00 +0100</pubDate><guid isPermaLink="false">tag:blog.pycnic.org,2017-03-13:/deploying-python-scripts-and-packages-internally.html</guid><category>reproducible research</category><category>python</category><category>gold route</category><category>green route</category><category>pip</category><category>conda</category><category>pypi</category><category>web-based version control repository</category><category>git</category><category>hpc</category></item><item><title>Ingredients for a recipe for reproducible research</title><link>http://blog.pycnic.org/ingredients-for-a-recipe-for-reproducible-research.html</link><description>&lt;p&gt;Doing computational research in a reproducible manner requires some effort in
 the first place.
 The good news is, project organisation and collaboration come almost for free.&lt;/p&gt;
 &lt;p&gt;This series provides some guidance in setting up an individual or collaborative

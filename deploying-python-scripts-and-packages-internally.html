@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en" prefix="og: http://ogp.me/ns# fb: https://www.facebook.com/2008/fbml">
 <head>
-    <title>Articles by Andreas Sorge - The Pycnic</title>
+    <title>Deploying Python scripts and packages internally - The Pycnic</title>
     <!-- Using the latest rendering mode for IE -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta charset="utf-8">
@@ -165,15 +165,30 @@ init_mathjax = function() {
 init_mathjax();
 </script>
 
+<link rel="canonical" href="http://blog.pycnic.org/deploying-python-scripts-and-packages-internally.html">
 
-        <meta name="author" content="pycnic" />
+        <meta name="author" content="Andreas Sorge" />
+        <meta name="keywords" content="reproducible research,python,gold route,green route,pip,conda,pypi,web-based version control repository,git,hpc" />
+        <meta name="description" content="In developing Python scripts and packages for computational research, we distinguish two different routes to openness. The gold standard is you develop your code in the open right away. This means creating a public repository on a public version-control repository service like GitHub and regularly pushing all commits there. The …" />
 
-    <!-- Open Graph tags -->
         <meta property="og:site_name" content="The Pycnic" />
-        <meta property="og:type" content="website"/>
-        <meta property="og:title" content="The Pycnic"/>
-        <meta property="og:url" content="http://blog.pycnic.org"/>
-        <meta property="og:description" content="The Pycnic"/>
+        <meta property="og:type" content="article"/>
+        <meta property="og:title" content="Deploying Python scripts and packages internally"/>
+        <meta property="og:url" content="http://blog.pycnic.org/deploying-python-scripts-and-packages-internally.html"/>
+        <meta property="og:description" content="In developing Python scripts and packages for computational research, we distinguish two different routes to openness. The gold standard is you develop your code in the open right away. This means creating a public repository on a public version-control repository service like GitHub and regularly pushing all commits there. The …"/>
+        <meta property="article:published_time" content="2017-03-13" />
+            <meta property="article:section" content="Doing Science" />
+            <meta property="article:tag" content="reproducible research" />
+            <meta property="article:tag" content="python" />
+            <meta property="article:tag" content="gold route" />
+            <meta property="article:tag" content="green route" />
+            <meta property="article:tag" content="pip" />
+            <meta property="article:tag" content="conda" />
+            <meta property="article:tag" content="pypi" />
+            <meta property="article:tag" content="web-based version control repository" />
+            <meta property="article:tag" content="git" />
+            <meta property="article:tag" content="hpc" />
+            <meta property="article:author" content="Andreas Sorge" />
 
 
     <!-- Bootstrap -->
@@ -188,6 +203,8 @@ init_mathjax();
 
 
 
+        <link href="http://blog.pycnic.org/feeds/doing-science.atom.xml" type="application/atom+xml" rel="alternate"
+              title="The Pycnic Doing Science ATOM Feed"/>
 
 </head>
 <body>
@@ -209,7 +226,7 @@ The Pycnic            </a>
                         <li >
                             <a href="http://blog.pycnic.org/category/about.html">About</a>
                         </li>
-                        <li >
+                        <li class="active">
                             <a href="http://blog.pycnic.org/category/doing-science.html">Doing science</a>
                         </li>
                         <li >
@@ -227,9 +244,20 @@ The Pycnic            </a>
 <div class="container">
     <div class="row">
         <div class="col-sm-9">
-            <article>
-                <h2><a href="http://blog.pycnic.org/deploying-python-scripts-and-packages-internally.html">Deploying Python scripts and packages internally</a></h2>
-                    <div class="well well-sm">
+    <section id="content">
+        <article>
+            <header class="page-header">
+                <h1>
+                    <a href="http://blog.pycnic.org/deploying-python-scripts-and-packages-internally.html"
+                       rel="bookmark"
+                       title="Permalink to Deploying Python scripts and packages internally">
+                        Deploying Python scripts and packages internally
+                    </a>
+                </h1>
+            </header>
+            <div class="entry-content">
+                <div class="panel">
+                    <div class="panel-body">
 <footer class="post-info">
     <span class="label label-default">Date</span>
     <span class="published">
@@ -268,168 +296,54 @@ The Pycnic            </a>
 	<a href="http://blog.pycnic.org/tag/hpc.html">hpc</a>
     
 </footer><!-- /.post-info -->                    </div>
-                <div class="summary"><p>In developing Python scripts and packages for computational research, we
+                </div>
+                <p>In developing Python scripts and packages for computational research, we
 distinguish two different routes to openness.
 The gold standard is you develop your code in the open right away.
 This means creating a public repository on a public version-control repository
 service like GitHub and regularly pushing all commits there.
-The …</p>
-                    <a class="btn btn-default btn-xs" href="http://blog.pycnic.org/deploying-python-scripts-and-packages-internally.html">more ...</a>
-                </div>
-            </article>
-            <hr/>
-            <article>
-                <h2><a href="http://blog.pycnic.org/ingredients-for-a-recipe-for-reproducible-research.html">Ingredients for a recipe for reproducible research</a></h2>
-                    <div class="well well-sm">
-<footer class="post-info">
-    <span class="label label-default">Date</span>
-    <span class="published">
-        <i class="fa fa-calendar"></i><time datetime="2017-02-23T18:00:00+01:00"> Do 23 Februar 2017</time>
-    </span>
-
-            <span class="label label-default">Series</span>
-            Part 1 of Reproducible Research Recipe
-
-            <span class="label label-default">By</span>
-            <a href="http://blog.pycnic.org/author/andreas-sorge.html"><i class="fa fa-user"></i> Andreas Sorge</a>
-
-        <span class="label label-default">Category</span>
-        <a href="http://blog.pycnic.org/category/doing-science.html">Doing Science</a>
-
-
-<span class="label label-default">Tags</span>
-	<a href="http://blog.pycnic.org/tag/reproducible-research.html">reproducible research</a>
-    
-</footer><!-- /.post-info -->                    </div>
-                <div class="summary"><p>Doing computational research in a reproducible manner requires some effort in
-the first place.
-The good news is, project organisation and collaboration come almost for free.</p>
-<p>This series provides some guidance in setting up an individual or collaborative
-computational research project that leads to a specific scientific output.
-Project and …</p>
-                    <a class="btn btn-default btn-xs" href="http://blog.pycnic.org/ingredients-for-a-recipe-for-reproducible-research.html">more ...</a>
-                </div>
-            </article>
-            <hr/>
-            <article>
-                <h2><a href="http://blog.pycnic.org/introducing-the-doing-science-category.html">Introducing the "Doing Science" category</a></h2>
-                    <div class="well well-sm">
-<footer class="post-info">
-    <span class="label label-default">Date</span>
-    <span class="published">
-        <i class="fa fa-calendar"></i><time datetime="2017-02-23T15:00:00+01:00"> Do 23 Februar 2017</time>
-    </span>
-
-
-            <span class="label label-default">By</span>
-            <a href="http://blog.pycnic.org/author/andreas-sorge.html"><i class="fa fa-user"></i> Andreas Sorge</a>
-
-        <span class="label label-default">Category</span>
-        <a href="http://blog.pycnic.org/category/about.html">About</a>
-
-
-<span class="label label-default">Tags</span>
-	<a href="http://blog.pycnic.org/tag/about.html">about</a>
-    
-</footer><!-- /.post-info -->                    </div>
-                <div class="summary"><p>The new <a href="/category/doing-science.html"><strong>Doing Science</strong> category</a> will hosts
-posts aimed at the individual scientist and group.
-The posts will be dealing with how to organise individual and collaborative
-research and other scientific work on the work level.</p>
-                    <a class="btn btn-default btn-xs" href="http://blog.pycnic.org/introducing-the-doing-science-category.html">more ...</a>
-                </div>
-            </article>
-            <hr/>
-            <article>
-                <h2><a href="http://blog.pycnic.org/using-categories-and-tags.html">Using categories and tags</a></h2>
-                    <div class="well well-sm">
-<footer class="post-info">
-    <span class="label label-default">Date</span>
-    <span class="published">
-        <i class="fa fa-calendar"></i><time datetime="2017-02-23T14:00:00+01:00"> Do 23 Februar 2017</time>
-    </span>
-
-
-            <span class="label label-default">By</span>
-            <a href="http://blog.pycnic.org/author/andreas-sorge.html"><i class="fa fa-user"></i> Andreas Sorge</a>
-
-        <span class="label label-default">Category</span>
-        <a href="http://blog.pycnic.org/category/meta.html">Meta</a>
-
-
-<span class="label label-default">Tags</span>
-	<a href="http://blog.pycnic.org/tag/blogging.html">blogging</a>
-        /
-	<a href="http://blog.pycnic.org/tag/digital-asset-management.html">digital asset management</a>
-    
-</footer><!-- /.post-info -->                    </div>
-                <div class="summary"><p>Digital assets abound and come in diverse flavors.
-For example, a digital asset can be a blog post, a scientific article, a
-software package.
-Specific repositories store digital assets of the same type.
-A blog stores blog posts, a scientific journal stores scientific articles, a
-software package repository stores you …</p>
-                    <a class="btn btn-default btn-xs" href="http://blog.pycnic.org/using-categories-and-tags.html">more ...</a>
-                </div>
-            </article>
-            <hr/>
-            <article>
-                <h2><a href="http://blog.pycnic.org/introducing-the-meta-category.html">Introducing the Meta category</a></h2>
-                    <div class="well well-sm">
-<footer class="post-info">
-    <span class="label label-default">Date</span>
-    <span class="published">
-        <i class="fa fa-calendar"></i><time datetime="2017-02-23T00:00:00+01:00"> Do 23 Februar 2017</time>
-    </span>
-
-
-            <span class="label label-default">By</span>
-            <a href="http://blog.pycnic.org/author/andreas-sorge.html"><i class="fa fa-user"></i> Andreas Sorge</a>
-
-        <span class="label label-default">Category</span>
-        <a href="http://blog.pycnic.org/category/about.html">About</a>
-
-
-<span class="label label-default">Tags</span>
-	<a href="http://blog.pycnic.org/tag/about.html">about</a>
-    
-</footer><!-- /.post-info -->                    </div>
-                <div class="summary"><p>The new <a href="/category/meta.html"><strong>Meta</strong> category</a> will be a home to all
-blog posts concerned with running this blog.</p>
-                    <a class="btn btn-default btn-xs" href="http://blog.pycnic.org/introducing-the-meta-category.html">more ...</a>
-                </div>
-            </article>
-            <hr/>
-            <article>
-                <h2><a href="http://blog.pycnic.org/hello-world.html">Hello World!</a></h2>
-                    <div class="well well-sm">
-<footer class="post-info">
-    <span class="label label-default">Date</span>
-    <span class="published">
-        <i class="fa fa-calendar"></i><time datetime="2017-02-10T14:00:00+01:00"> Fr 10 Februar 2017</time>
-    </span>
-
-
-            <span class="label label-default">By</span>
-            <a href="http://blog.pycnic.org/author/andreas-sorge.html"><i class="fa fa-user"></i> Andreas Sorge</a>
-
-        <span class="label label-default">Category</span>
-        <a href="http://blog.pycnic.org/category/about.html">About</a>
-
-
-<span class="label label-default">Tags</span>
-	<a href="http://blog.pycnic.org/tag/pycnic.html">pycnic</a>
-        /
-	<a href="http://blog.pycnic.org/tag/about.html">about</a>
-    
-</footer><!-- /.post-info -->                    </div>
-                <div class="summary"><p>Welcome to "The Pycnic", the blog of the pycnic team.</p>
-<div class="highlight"><pre><span></span><span class="k">print</span><span class="p">(</span><span class="s2">&quot;Hello World!&quot;</span><span class="p">)</span>
+The green standard is to develop the code internally first and upload it later
+to a public repository, before the research paper becomes available online.</p>
+<p>On the golden route, continuous integration and deployment of scripts
+and packages e.g. to PyPI is fine as the source is public anyway.
+However, on the green route, the source is to remain internal for the time being
+and hence, publishing the package to PyPI is not an option.
+The question is, how to make sure that the developed code is well-integrated
+into the Python ecosystem anyway.</p>
+<p>Here, we restrict ourselves to the following setting:</p>
+<ul>
+<li>We do not need to build conda packages, pip packages will do.
+  (We should build conda packages though as soon as we publish the source.)</li>
+<li>We use a private repository onto which we have command-line access
+  (e.g. GitLab or GitHub with SSH key)</li>
+</ul>
+<p>This means, developing a Python package, and tagging versions along, we can
+install a specific version, branch, or even commit, by using
+<a href="https://pip.pypa.io/en/latest/reference/pip_install/#git">pip with git</a>:</p>
+<div class="highlight"><pre><span></span>pip install git:+ssh://SERVER/REPOSITORY-PATH<span class="o">[</span>@BRANCH<span class="p">|</span>VERSION<span class="p">|</span>COMMIT-HASH<span class="o">]</span>
 </pre></div>
-                    <a class="btn btn-default btn-xs" href="http://blog.pycnic.org/hello-world.html">more ...</a>
-                </div>
-            </article>
-            <hr/>
+
+
+<p>When installing from a remote machine, e.g. a HPC cluster, one needs to register
+one's SSH key from that machine to the web-based version control repository
+(GitLab / GitHub).</p>
+            </div>
+            <!-- /.entry-content -->
+<section class="well" id="related-posts">
+    <h4>Related Posts:</h4>
+    <ul>
+        <li><a href="http://blog.pycnic.org/ingredients-for-a-recipe-for-reproducible-research.html">Ingredients for a recipe for reproducible research</a></li>
+    </ul>
+</section>
+<section class="well" id="related-posts">
+    <h4>Part 2 of the Reproducible Research Recipe series</h4>
+       <h5>Previous articles</h5>
+       <ul>
+           <li><a href="http://blog.pycnic.org/ingredients-for-a-recipe-for-reproducible-research.html">Ingredients for a recipe for reproducible research</a></li>
+       </ul>
+</section>
+        </article>
+    </section>
 
         </div>
         <div class="col-sm-3" id="sidebar">
@@ -551,6 +465,14 @@ blog posts concerned with running this blog.</p>
                 </ul>
             </li>
 
+                    <li class="list-group-item"><h4><i class="fa fa-tags fa-list-ul"></i><span class="icon-label">Series</span></h4>
+                        <ul class="list-group">
+                            <li class="list-group-item">
+                                <h5></i>Previous article</h5>
+                                <a href="http://blog.pycnic.org/ingredients-for-a-recipe-for-reproducible-research.html">Ingredients for a recipe for reproducible research</a>
+                            </li>
+                        </ul>
+                    </li>
 
 
     <li class="list-group-item"><h4><i class="fa fa-github fa-lg"></i><span class="icon-label">GitHub Repos</span></h4>
