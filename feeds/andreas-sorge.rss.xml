@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0"><channel><title>The Pycnic - Andreas Sorge</title><link>http://blog.pycnic.org/</link><description></description><lastBuildDate>Mon, 13 Mar 2017 17:00:00 +0100</lastBuildDate><item><title>Deploying Python scripts and packages internally</title><link>http://blog.pycnic.org/deploying-python-scripts-and-packages-internally.html</link><description>&lt;p&gt;In developing Python scripts and packages for computational research, we
+<rss version="2.0"><channel><title>The Pycnic - Andreas Sorge</title><link>http://blog.pycnic.org/</link><description></description><lastBuildDate>Mon, 20 Mar 2017 00:00:00 +0100</lastBuildDate><item><title>Setting up a DRMAA-compatible HPC cluster for reproducible research</title><link>http://blog.pycnic.org/setting-up-a-drmaa-compatible-hpc-cluster-for-reproducible-research.html</link><description>&lt;p&gt;This post is about setting up a HPC cluster that runs computational tasks with
+a scheduler conforming to the
+&lt;a href="https://en.wikipedia.org/wiki/DRMAA"&gt;Distributed Resource Management Application API (DRMAA)&lt;/a&gt; and has a
+shared filesystem (NFS) of all master and slave nodes.
+This includes Grid Engine (SGE).
+Out of all available Python high-level abstraction frameworks …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Andreas Sorge</dc:creator><pubDate>Mon, 20 Mar 2017 00:00:00 +0100</pubDate><guid isPermaLink="false">tag:blog.pycnic.org,2017-03-20:/setting-up-a-drmaa-compatible-hpc-cluster-for-reproducible-research.html</guid><category>reproducible research</category><category>python</category><category>conda</category><category>hpc</category><category>dask</category><category>sge</category><category>grid engine</category><category>mpids nld clusters</category><category>interactive computation</category><category>scripted computation</category></item><item><title>Deploying Python scripts and packages internally</title><link>http://blog.pycnic.org/deploying-python-scripts-and-packages-internally.html</link><description>&lt;p&gt;In developing Python scripts and packages for computational research, we
 distinguish two different routes to openness.
 The gold standard is you develop your code in the open right away.
 This means creating a public repository on a public version-control repository

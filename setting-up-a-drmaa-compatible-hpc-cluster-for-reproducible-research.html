@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en" prefix="og: http://ogp.me/ns# fb: https://www.facebook.com/2008/fbml">
 <head>
-    <title>about - The Pycnic</title>
+    <title>Setting up a DRMAA-compatible HPC cluster for reproducible research - The Pycnic</title>
     <!-- Using the latest rendering mode for IE -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta charset="utf-8">
@@ -165,16 +165,30 @@ init_mathjax = function() {
 init_mathjax();
 </script>
 
+<link rel="canonical" href="http://blog.pycnic.org/setting-up-a-drmaa-compatible-hpc-cluster-for-reproducible-research.html">
 
-    <meta name="author" content="pycnic" />
-    <meta name="keywords" content="about" />
+        <meta name="author" content="Andreas Sorge" />
+        <meta name="keywords" content="reproducible research,python,conda,hpc,dask,sge,grid engine,mpids nld clusters,interactive computation,scripted computation" />
+        <meta name="description" content="This post is about setting up a HPC cluster that runs computational tasks with a scheduler conforming to the Distributed Resource Management Application API (DRMAA) and has a shared filesystem (NFS) of all master and slave nodes. This includes Grid Engine (SGE). Out of all available Python high-level abstraction frameworks …" />
 
-    <!-- Open Graph tags -->
         <meta property="og:site_name" content="The Pycnic" />
-        <meta property="og:type" content="website"/>
-        <meta property="og:title" content="The Pycnic"/>
-        <meta property="og:url" content="http://blog.pycnic.org"/>
-        <meta property="og:description" content="The Pycnic"/>
+        <meta property="og:type" content="article"/>
+        <meta property="og:title" content="Setting up a DRMAA-compatible HPC cluster for reproducible research"/>
+        <meta property="og:url" content="http://blog.pycnic.org/setting-up-a-drmaa-compatible-hpc-cluster-for-reproducible-research.html"/>
+        <meta property="og:description" content="This post is about setting up a HPC cluster that runs computational tasks with a scheduler conforming to the Distributed Resource Management Application API (DRMAA) and has a shared filesystem (NFS) of all master and slave nodes. This includes Grid Engine (SGE). Out of all available Python high-level abstraction frameworks …"/>
+        <meta property="article:published_time" content="2017-03-20" />
+            <meta property="article:section" content="Doing Science" />
+            <meta property="article:tag" content="reproducible research" />
+            <meta property="article:tag" content="python" />
+            <meta property="article:tag" content="conda" />
+            <meta property="article:tag" content="hpc" />
+            <meta property="article:tag" content="dask" />
+            <meta property="article:tag" content="sge" />
+            <meta property="article:tag" content="grid engine" />
+            <meta property="article:tag" content="mpids nld clusters" />
+            <meta property="article:tag" content="interactive computation" />
+            <meta property="article:tag" content="scripted computation" />
+            <meta property="article:author" content="Andreas Sorge" />
 
 
     <!-- Bootstrap -->
@@ -189,6 +203,8 @@ init_mathjax();
 
 
 
+        <link href="http://blog.pycnic.org/feeds/doing-science.atom.xml" type="application/atom+xml" rel="alternate"
+              title="The Pycnic Doing Science ATOM Feed"/>
 
 </head>
 <body>
@@ -210,7 +226,7 @@ The Pycnic            </a>
                         <li >
                             <a href="http://blog.pycnic.org/category/about.html">About</a>
                         </li>
-                        <li >
+                        <li class="active">
                             <a href="http://blog.pycnic.org/category/doing-science.html">Doing science</a>
                         </li>
                         <li >
@@ -228,92 +244,185 @@ The Pycnic            </a>
 <div class="container">
     <div class="row">
         <div class="col-sm-9">
-            <article>
-                <h2><a href="http://blog.pycnic.org/introducing-the-doing-science-category.html">Introducing the "Doing Science" category</a></h2>
-                    <div class="well well-sm">
+    <section id="content">
+        <article>
+            <header class="page-header">
+                <h1>
+                    <a href="http://blog.pycnic.org/setting-up-a-drmaa-compatible-hpc-cluster-for-reproducible-research.html"
+                       rel="bookmark"
+                       title="Permalink to Setting up a DRMAA-compatible HPC cluster for reproducible research">
+                        Setting up a DRMAA-compatible HPC cluster for reproducible research
+                    </a>
+                </h1>
+            </header>
+            <div class="entry-content">
+                <div class="panel">
+                    <div class="panel-body">
 <footer class="post-info">
     <span class="label label-default">Date</span>
     <span class="published">
-        <i class="fa fa-calendar"></i><time datetime="2017-02-23T15:00:00+01:00"> Do 23 Februar 2017</time>
+        <i class="fa fa-calendar"></i><time datetime="2017-03-20T00:00:00+01:00"> Mo 20 März 2017</time>
     </span>
 
+            <span class="label label-default">Series</span>
+            Part 3 of Reproducible Research Recipe
 
             <span class="label label-default">By</span>
             <a href="http://blog.pycnic.org/author/andreas-sorge.html"><i class="fa fa-user"></i> Andreas Sorge</a>
 
         <span class="label label-default">Category</span>
-        <a href="http://blog.pycnic.org/category/about.html">About</a>
+        <a href="http://blog.pycnic.org/category/doing-science.html">Doing Science</a>
 
 
 <span class="label label-default">Tags</span>
-	<a href="http://blog.pycnic.org/tag/about.html">about</a>
-    
-</footer><!-- /.post-info -->                    </div>
-                <div class="summary"><p>The new <a href="/category/doing-science.html"><strong>Doing Science</strong> category</a> will hosts
-posts aimed at the individual scientist and group.
-The posts will be dealing with how to organise individual and collaborative
-research and other scientific work on the work level.</p>
-                    <a class="btn btn-default btn-xs" href="http://blog.pycnic.org/introducing-the-doing-science-category.html">more ...</a>
-                </div>
-            </article>
-            <hr/>
-            <article>
-                <h2><a href="http://blog.pycnic.org/introducing-the-meta-category.html">Introducing the Meta category</a></h2>
-                    <div class="well well-sm">
-<footer class="post-info">
-    <span class="label label-default">Date</span>
-    <span class="published">
-        <i class="fa fa-calendar"></i><time datetime="2017-02-23T00:00:00+01:00"> Do 23 Februar 2017</time>
-    </span>
-
-
-            <span class="label label-default">By</span>
-            <a href="http://blog.pycnic.org/author/andreas-sorge.html"><i class="fa fa-user"></i> Andreas Sorge</a>
-
-        <span class="label label-default">Category</span>
-        <a href="http://blog.pycnic.org/category/about.html">About</a>
-
-
-<span class="label label-default">Tags</span>
-	<a href="http://blog.pycnic.org/tag/about.html">about</a>
-    
-</footer><!-- /.post-info -->                    </div>
-                <div class="summary"><p>The new <a href="/category/meta.html"><strong>Meta</strong> category</a> will be a home to all
-blog posts concerned with running this blog.</p>
-                    <a class="btn btn-default btn-xs" href="http://blog.pycnic.org/introducing-the-meta-category.html">more ...</a>
-                </div>
-            </article>
-            <hr/>
-            <article>
-                <h2><a href="http://blog.pycnic.org/hello-world.html">Hello World!</a></h2>
-                    <div class="well well-sm">
-<footer class="post-info">
-    <span class="label label-default">Date</span>
-    <span class="published">
-        <i class="fa fa-calendar"></i><time datetime="2017-02-10T14:00:00+01:00"> Fr 10 Februar 2017</time>
-    </span>
-
-
-            <span class="label label-default">By</span>
-            <a href="http://blog.pycnic.org/author/andreas-sorge.html"><i class="fa fa-user"></i> Andreas Sorge</a>
-
-        <span class="label label-default">Category</span>
-        <a href="http://blog.pycnic.org/category/about.html">About</a>
-
-
-<span class="label label-default">Tags</span>
-	<a href="http://blog.pycnic.org/tag/pycnic.html">pycnic</a>
+	<a href="http://blog.pycnic.org/tag/reproducible-research.html">reproducible research</a>
         /
-	<a href="http://blog.pycnic.org/tag/about.html">about</a>
+	<a href="http://blog.pycnic.org/tag/python.html">python</a>
+        /
+	<a href="http://blog.pycnic.org/tag/conda.html">conda</a>
+        /
+	<a href="http://blog.pycnic.org/tag/hpc.html">hpc</a>
+        /
+	<a href="http://blog.pycnic.org/tag/dask.html">dask</a>
+        /
+	<a href="http://blog.pycnic.org/tag/sge.html">sge</a>
+        /
+	<a href="http://blog.pycnic.org/tag/grid-engine.html">grid engine</a>
+        /
+	<a href="http://blog.pycnic.org/tag/mpids-nld-clusters.html">mpids nld clusters</a>
+        /
+	<a href="http://blog.pycnic.org/tag/interactive-computation.html">interactive computation</a>
+        /
+	<a href="http://blog.pycnic.org/tag/scripted-computation.html">scripted computation</a>
     
 </footer><!-- /.post-info -->                    </div>
-                <div class="summary"><p>Welcome to "The Pycnic", the blog of the pycnic team.</p>
-<div class="highlight"><pre><span></span><span class="k">print</span><span class="p">(</span><span class="s2">&quot;Hello World!&quot;</span><span class="p">)</span>
-</pre></div>
-                    <a class="btn btn-default btn-xs" href="http://blog.pycnic.org/hello-world.html">more ...</a>
                 </div>
-            </article>
-            <hr/>
+                <p>This post is about setting up a HPC cluster that runs computational tasks with
+a scheduler conforming to the
+<a href="https://en.wikipedia.org/wiki/DRMAA">Distributed Resource Management Application API (DRMAA)</a> and has a
+shared filesystem (NFS) of all master and slave nodes.
+This includes Grid Engine (SGE).
+Out of all available Python high-level abstraction frameworks for
+computational task scheduling, we choose <a href="https://distributed.readthedocs.io/en/latest/">Dask.distributed</a>.
+Note that <a href="https://distributed.readthedocs.io/en/latest/setup.html">Dask.distributed is not restricted to DRMAA-compatible
+clusters</a>.</p>
+<p>In order to deploy Dask on DRMAA clusters, we choose <a href="https://github.com/dask/dask-drmaa">dask-drmaa</a>.
+A prerequisite is the <a href="https://github.com/pygridtools/drmaa-python">python-drmaa</a> package which interfaces
+to the cluster DRMAA library.
+To <a href="https://github.com/pygridtools/drmaa-python#installation">setup python-drmaa</a>, one needs to make sure that the
+cluster queueing settings are sourced (environment variables <code>SGE_ROOT</code> and
+<code>SGE_CELL</code>), as well as that the environment variable <code>DRMAA_LIBRARY_PATH</code>
+is set to the <code>libdrmaa.so</code> library of the system.</p>
+<p>For example, the <a href="https://github.com/andsor/dotphiles/blob/62bdafd5ed46ab2657c8e1be9c04779d1798eb06/bashrc.d/login01#L6">settings on the MPIDS NLD clusters</a> are:</p>
+<div class="highlight"><pre><span></span><span class="nb">source</span> /core/ge/NLD/common/settings.sh
+<span class="nv">DRMAA_LIBRARY_PATH</span><span class="o">=</span>/core/ge/lib/linux-x64/libdrmaa.so
+<span class="nb">export</span> <span class="nv">DRMAA_LIBRARY_PATH</span><span class="o">=</span><span class="nv">$DRMAA_LIBRARY_PATH</span>
+</pre></div>
+
+
+<p>Furthermore, and for the time being, we install a <a href="https://github.com/andsor/dask-drmaa">forked version of
+dask-drmaa</a>:</p>
+<div class="highlight"><pre><span></span>$ pip install git+https://github.com/andsor/dask-drmaa.git#egg<span class="o">=</span>dask-drmaa
+</pre></div>
+
+
+<p>(<strong>Note to myself: Create pull requests to the <a href="https://github.com/dask/dask-drmaa">original
+dask-drmaa</a></strong>.)</p>
+<p>An important abstraction is to <strong>separate computation from the setup of the
+computational environment</strong>.
+This means that the computational code connects to a Dask Client, but is not
+responsible for spinning up the cluster.
+The only parameter the computational code should take is the <a href="http://distributed.readthedocs.io/en/latest/api.html#distributed.client.Client"><code>address</code>
+parameter to connect to the scheduler</a>:</p>
+<div class="highlight"><pre><span></span><span class="c1"># address : set either interactively or feed in as command-line argument</span>
+<span class="kn">from</span> <span class="nn">dask.distributed</span> <span class="kn">import</span> <span class="n">Client</span>
+<span class="n">client</span> <span class="o">=</span> <span class="n">Client</span><span class="p">(</span><span class="n">address</span><span class="p">)</span>
+</pre></div>
+
+
+<p><em>Yes, this involves one manual step in both interactive and scripted computation:
+actually spinning up the dask distributed cluster and manually feeding the
+<code>address</code> parameter into the notebook or as a command-line argument to the
+script.</em></p>
+<p>Both interactive and scripted computation can opt for fixed-sized clusters or
+adaptive clusters.
+Adaptive clusters spawn additional workers upon demand (and stop them again).
+Fixed-size clusters have a fixed number of workers up and running, even though
+the actual computation is long finished.
+Adaptive clusters are particularly efficient if the cluster is idle.
+Basically, they scale to the cluster size if necessary but keep the cluster idle
+otherwise.
+When the cluster is under high load and busy, it takes some time to spawn the
+first workers, and in the meantime a lot more other jobs might get submitted,
+further increasing the time to spawning the next workers.
+Hence, under high load a fixed-sized cluster might be more efficient, as it
+reserves computational resources at once.
+These considerations hold for interactive computation as well as for scripted
+computation.</p>
+<p>The abstraction introduced above covers these cases, as the actual computation
+only needs the <code>address</code> parameter and does not care about the details of the
+dask distributed cluster (results will stay the same, even though the runtime of
+the computation will vary).</p>
+<p>To spin up the dask distributed cluster with dask-drmaa, either use the
+command line or a Python snippet.
+On the command line of the login or master node of the cluster, run</p>
+<div class="highlight"><pre><span></span>$ dask-drmaa -n <span class="m">10</span> -q queue.q
+</pre></div>
+
+
+<p>for a fixed-size cluster with 10 workers running on the queue <code>queue.q</code>.
+(NB: In the <a href="https://github.com/andsor/dask-drmaa">dask-drmaa fork</a>, workers consume only one
+core.)
+For an adaptive cluster, simply omit the number of workers:</p>
+<div class="highlight"><pre><span></span>$ dask-drmaa -q queue.q
+</pre></div>
+
+
+<p>In both cases, the command will output a JSON string of the <code>address</code>
+parameter to <code>stdout</code> for further manual or scripted processing.</p>
+<p>Now, we assume we have only SSH access to the cluster master or login node, and
+cannot reach the Dask scheduler directly.
+Luckily, we can "forward" the port the Dask scheduler listens to on the cluster
+master or login node to our local host.
+In order to forward the dask scheduler port to our local host, we use SSH
+portforwarding:</p>
+<div class="highlight"><pre><span></span>$ ssh -N -L <span class="o">{</span>port<span class="o">}</span>:<span class="o">{</span>hostip<span class="o">}</span>:<span class="o">{</span>port<span class="o">}</span> <span class="o">{</span>loginnode<span class="o">}</span>
+</pre></div>
+
+
+<p>Here, substitute the scheduler <code>address</code> information and the SSH hostname for
+the cluster master or login node.
+Now, we connect to the dask scheduler on our local host with:</p>
+<div class="highlight"><pre><span></span><span class="c1"># address is localhost:port</span>
+<span class="kn">from</span> <span class="nn">dask.distributed</span> <span class="kn">import</span> <span class="n">Client</span>
+<span class="n">client</span> <span class="o">=</span> <span class="n">Client</span><span class="p">(</span><span class="n">address</span><span class="p">)</span>
+</pre></div>
+
+
+<p>The biggest caveat is that Bokeh is not forwarded this way.</p>
+<p>Further reading and examples:</p>
+<ul>
+<li><a href="http://matthewrocklin.com/blog/work/2017/01/24/dask-custom">Custom Parallel Algorithms on a Cluster with Dask</a></li>
+</ul>
+            </div>
+            <!-- /.entry-content -->
+<section class="well" id="related-posts">
+    <h4>Related Posts:</h4>
+    <ul>
+        <li><a href="http://blog.pycnic.org/deploying-python-scripts-and-packages-internally.html">Deploying Python scripts and packages internally</a></li>
+        <li><a href="http://blog.pycnic.org/ingredients-for-a-recipe-for-reproducible-research.html">Ingredients for a recipe for reproducible research</a></li>
+    </ul>
+</section>
+<section class="well" id="related-posts">
+    <h4>Part 3 of the Reproducible Research Recipe series</h4>
+       <h5>Previous articles</h5>
+       <ul>
+           <li><a href="http://blog.pycnic.org/ingredients-for-a-recipe-for-reproducible-research.html">Ingredients for a recipe for reproducible research</a></li>
+           <li><a href="http://blog.pycnic.org/deploying-python-scripts-and-packages-internally.html">Deploying Python scripts and packages internally</a></li>
+       </ul>
+</section>
+        </article>
+    </section>
 
         </div>
         <div class="col-sm-3" id="sidebar">
@@ -332,18 +441,28 @@ blog posts concerned with running this blog.</p>
             <li class="list-group-item"><h4><i class="fa fa-home fa-lg"></i><span class="icon-label">Recent Posts</span></h4>
                 <ul class="list-group" id="recentposts">
                     <li class="list-group-item">
+                        <a href="http://blog.pycnic.org/setting-up-a-drmaa-compatible-hpc-cluster-for-reproducible-research.html">
+                            Setting up a DRMAA-compatible HPC cluster for reproducible research
+                        </a>
+                    </li>
+                    <li class="list-group-item">
+                        <a href="http://blog.pycnic.org/deploying-python-scripts-and-packages-internally.html">
+                            Deploying Python scripts and packages internally
+                        </a>
+                    </li>
+                    <li class="list-group-item">
+                        <a href="http://blog.pycnic.org/ingredients-for-a-recipe-for-reproducible-research.html">
+                            Ingredients for a recipe for reproducible research
+                        </a>
+                    </li>
+                    <li class="list-group-item">
                         <a href="http://blog.pycnic.org/introducing-the-doing-science-category.html">
                             Introducing the "Doing Science" category
                         </a>
                     </li>
                     <li class="list-group-item">
-                        <a href="http://blog.pycnic.org/introducing-the-meta-category.html">
-                            Introducing the Meta category
-                        </a>
-                    </li>
-                    <li class="list-group-item">
-                        <a href="http://blog.pycnic.org/hello-world.html">
-                            Hello World!
+                        <a href="http://blog.pycnic.org/using-categories-and-tags.html">
+                            Using categories and tags
                         </a>
                     </li>
                 </ul>
@@ -455,6 +574,14 @@ blog posts concerned with running this blog.</p>
                 </ul>
             </li>
 
+                    <li class="list-group-item"><h4><i class="fa fa-tags fa-list-ul"></i><span class="icon-label">Series</span></h4>
+                        <ul class="list-group">
+                            <li class="list-group-item">
+                                <h5></i>Previous article</h5>
+                                <a href="http://blog.pycnic.org/deploying-python-scripts-and-packages-internally.html">Deploying Python scripts and packages internally</a>
+                            </li>
+                        </ul>
+                    </li>
 
 
     <li class="list-group-item"><h4><i class="fa fa-github fa-lg"></i><span class="icon-label">GitHub Repos</span></h4>
